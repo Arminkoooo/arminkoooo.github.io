@@ -1,0 +1,255 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: Mukta, san-serif;
+	scroll-behavior: smooth;
+}
+:root{
+	--lightGray: #837e72;
+	--Red: #DE0000;
+	--Blue: #1e85ae;
+	--gray: #373b49;
+	--begie: #beb9ac;
+	--gray1: #51576c;
+}
+a{
+	text-decoration: none;
+}
+nav{
+	list-style-type: none;
+}
+li{
+	margin: 0px;	
+	padding: 12px 12px 0 px 12px;
+	float: left;
+	text-transform: uppercase;
+	
+}
+/* nav li:nth-child(1){ */
+	/* margin-top:	18px; */
+	/* line-height: 0.3; */
+	/* border-right: 1px solid var(--lighGray); */
+/* } */
+/* nav li:nth-child(3){ */
+	/* margin-top: 18px; */
+	/* line-height: 0.5px; */
+	/* border-left: 1px solid var(--lighGray); */
+/* } */
+nav li a{
+	font-weight: 600;
+	font-size: 22px;
+	padding: 12px;
+	
+}
+nav li a:link{
+	color: var(--lightGray);
+}
+nav li a:visited{
+	color: var(--lightGray);
+}
+nav li a:hover{
+	color: var(--Red);
+}
+.active-link{
+	border-bottom: 5px solid var(--Red);
+}
+nav li a.link{
+	color: var(--Blue);
+}
+header{
+	background: var(--gray1);
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	
+}
+header a{	
+	margin-top: 11px;
+}
+header img{
+	width: 120px;
+	margin: 15px;
+	
+}
+#cover-background{
+	background-image: url("../images/cover.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 650px;
+	display: flex;
+	flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#cover-background h1{
+	font-size: 40px;
+	color: #fff;
+	padding-top: 160px;
+	padding-left: 75px;
+}
+#cover-background a{
+	background-color: var(--Blue);
+	color: #fff;
+	font-weight: 600;
+	border-radius: 6px;
+	padding: 10px 50px;
+	opacity: 1;
+	transition: 0.3s;
+}
+#cover-background a:hover{
+	opacity: 0.8;
+}
+#background{
+	background-color: var(--begie);
+}
+section{
+	padding-top: 10px;
+}
+section > h1{
+	text-align: center;
+	color: var(--lightGray);
+	font-size: 40px;  
+	
+}
+hr{
+	width: 30%;
+	margin: 0px auto;
+}
+article{
+	display: flex;
+	width: 60%;
+	height: 200px;
+	padding: 10px;
+	margin: 20px auto;
+	background: #c2c3c4;
+	transition: 0.5s;
+}
+article h2{
+	font-size: 24px;
+	margin-left: 15px;
+	color: #fff;
+	letter-spacing: 1px;
+}
+article p{
+	font-size: 19px;
+	margin:0px 15px;
+	text-align: justify;
+	color: var(--Blue);
+	font-weight: bold;
+}	
+article img{
+	height: 200px;
+}
+article:hover{
+	width: 62%;
+	box-shadow: 5px 10px 15px var(--lightGray);
+}
+.margin0{
+	margin-bottom: 0px;
+}
+#container{
+	background-color: var(--begie);
+	position: relative;
+	min-height: 20.3vh;
+}
+footer{
+	margin: 0px auto;
+	display: flex;
+	width: 100%;
+	height: 55px;
+	background: var(--gray);
+	align-items: center;
+	justify-content: space-around;
+	position: absolute;
+	bottom: 0;
+}
+#footer-nav li a{
+	font-size: 18px;
+	color: var(--lightGray);
+}
+#footer-nav li a:hover{
+	color: #ccc;
+}
+#socials a{
+	margin: 0px 3px;
+	font-size: 20px;
+}
+#socials a:link{
+	color: var(--lightGray);
+}
+#socials a:visited{
+	color: var(--lightGray);
+}
+#socials a:hover{
+	color: #ccc;
+}
+main .title{
+	display: flex;
+	color: var(--Blue);
+	justify-content: space-around;
+	margin-top: 16px;
+	margin-bottom: 20px;
+}
+.picture-row{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	
+}
+.pictures{
+	width: 420px;
+	height: 420px;
+	display: flex;
+	position: relative;
+	justify-content: center;
+}
+.pictures img{
+	width: 370px;
+	height: 370px;
+	margin: 0px 12px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 3px var(--lightGray);
+	object-fit: cover;
+	transition: width 0.2s;
+}
+.pictures img:hover{
+	width: 420px;
+}
+.truck-row{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-top: 25px;
+}
+.truck-models{
+	width: 300px;
+	display: flex;
+	background: #f5f5f5;
+	flex-direction: column;
+	justify-content: space-evenly;
+	word-wrap: break-word;
+	border-radius: 10px;
+	box-shadow: 3px 3px 4px var(--lightGray);
+	transition: width 0.3s;
+}
+.truck-picture{
+	width: 200px;
+	height: 200px;
+	margin: 0px auto;
+}
+.truck-picture img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.truck-info h3{
+	text-align: center;
+	color: var(--Blue);
+}
+.truck-info p:nth-child(2){
+	color: var(--lightGray);
+}
+.truck-models:hover{
+	width: 330px;
+}
