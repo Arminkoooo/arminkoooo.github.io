@@ -26,16 +26,6 @@ li{
 	text-transform: uppercase;
 	
 }
-/* nav li:nth-child(1){ */
-	/* margin-top:	18px; */
-	/* line-height: 0.3; */
-	/* border-right: 1px solid var(--lighGray); */
-/* } */
-/* nav li:nth-child(3){ */
-	/* margin-top: 18px; */
-	/* line-height: 0.5px; */
-	/* border-left: 1px solid var(--lighGray); */
-/* } */
 nav li a{
 	font-weight: 600;
 	font-size: 22px;
@@ -189,12 +179,13 @@ footer{
 #socials a:hover{
 	color: #ccc;
 }
-main .title{
+.title{
 	display: flex;
 	color: var(--Blue);
 	justify-content: space-around;
 	margin-top: 16px;
 	margin-bottom: 20px;
+	font-size: 28px;
 }
 .picture-row{
 	width: 100%;
